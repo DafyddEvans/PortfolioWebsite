@@ -1,0 +1,174 @@
+
+body {
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 2rem;
+    color: black;
+    
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+footer {
+    font-size: 1rem;
+    background-color: #03256c;
+    padding: 25px;
+    color: white;
+}
+h2 {
+    margin: 0;
+}
+
+svg{
+    position: relative;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+i {
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 1000px;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+.sidebar {
+    position: fixed;
+    color: white;
+    background-color: #1f1f1f;
+    height: 100%;
+    width: 60px;
+    z-index: 10;
+    transition: width 300ms
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+
+.content-contianer {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    text-align: left;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    
+    margin-left: 20%; 
+    margin-right: auto;
+    top: 30%;
+    width: 35rem;
+    z-index: 5;
+}
+
+.top-svg-transition {
+    top: 4rem;
+}
+
+.middle {
+    height: 1000px
+}
+
+
+.fab-style {
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon {
+    background-color: #2541b2;
+    margin: 1rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.nav-button {
+    position: relative;
+    top: -50px;
+}
+
+.nav-button:hover {
+    color: #e6e3e3;
+    cursor: pointer;
+}
+
+.header-nav-button {
+    position: absolute;
+    bottom: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100px;
+}
+.header-nav-button:hover {
+    color: #e6e3e3;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 1.75rem;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        top: 20%;
+        margin-left: 20%;
+    }
+
+    .icon {
+        font-size: 0.8rem;
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-button {
+        font-size: 4rem;
+        top: -1.25rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
