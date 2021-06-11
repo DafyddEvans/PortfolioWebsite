@@ -7,6 +7,7 @@ const sidebarIcons = document.querySelectorAll(".icon")
 
 const footerIcons = document.querySelectorAll(".footer-icon")
 
+const body = document.body
 const home = document.getElementById("particles-js")
 const about = document.getElementById("about")
 const toAbout = document.getElementById("to-about")
@@ -156,6 +157,8 @@ projects.forEach( (project) => {
         const modal = document.getElementById(id)
 
         modal.style.display = "block"
+        body.style.height = "100vh"
+        body.style.overflowY = "hidden"
 
     })
 })
@@ -164,16 +167,10 @@ modals.forEach( (modal) => {
     const btn = modal.getElementsByTagName("span")[0]
 
     modal.addEventListener("click", (event) => {
-        if (event.target == btn) {
+        if (event.target == btn || event.target == modal) {
             modal.style.display = "none";
+            body.style.height = ""
+            body.style.overflowY = ""
         }
-    })
-})
-
-modals.forEach( (modal) => {
-    modal.addEventListener("click", (event) => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-          }
     })
 })
