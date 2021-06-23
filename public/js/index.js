@@ -10,8 +10,10 @@ const footerIcons = document.querySelectorAll(".footer-icon")
 const body = document.body
 const home = document.getElementById("particles-js")
 const about = document.getElementById("about")
+const project = document.getElementById("projects")
 const toAbout = document.getElementById("to-about")
 const toHome = document.getElementById("to-home")
+
 
 function colorPicker(className) {
     switch (className) {
@@ -50,6 +52,8 @@ function getElement(name) {
             return "";
     }
 }
+
+
 
 
 
@@ -151,9 +155,9 @@ checkPosition()
 const projects = document.querySelectorAll(".project")
 const modals = document.querySelectorAll(".modal")
 
-projects.forEach( (project) => {
-    project.addEventListener("click", () => {
-        const id = project.getElementsByTagName("h1")[0].innerHTML
+projects.forEach( (proj) => {
+    proj.addEventListener("click", () => {
+        const id = proj.getElementsByTagName("h1")[0].innerHTML
         const modal = document.getElementById(id)
 
         modal.style.display = "block"

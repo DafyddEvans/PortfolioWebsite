@@ -124,13 +124,14 @@ canvas {
     top: 30%;
     width: 25rem;
     z-index: 5;
+    pointer-events: none;
 }
 
 .top-svg-transition {
     top: 4rem;
 }
 
-.middle {
+.contact-container {
     height: 1000px
 }
 
@@ -207,18 +208,13 @@ canvas {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
     left: 0;
     top: 0;
+    z-index: 1000;
     width: 100%;
     height: 100%;
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
+    overflow: auto;
     background-color: rgba(0,0,0,0.4);
-}
-
-body.viewport-lg {
-    position: absolute;
 }
 
 .inner-modal {
@@ -293,5 +289,18 @@ body.viewport-lg {
 @media only screen and (max-width: 700px) {
     .project {
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .content-contianer {
+        width: 400px;
     }
 }
