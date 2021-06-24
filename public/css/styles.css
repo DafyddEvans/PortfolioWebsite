@@ -96,6 +96,7 @@ canvas {
 
 
 .content-contianer {
+    min-width: 400px;
     width: 100%;
     height: 100%;
 }
@@ -299,8 +300,8 @@ canvas {
 }
 
 
-/* @media only screen and (max-width: 400px) {
-    .content-contianer {
-        width: 400px;
+@media only screen and (max-width: 400px) {
+    .header-nav-button {
+        display: none;
     }
-} */
+}
