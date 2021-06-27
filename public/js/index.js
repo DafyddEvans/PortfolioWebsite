@@ -44,6 +44,9 @@ function getElement(name) {
 
         case "Projects":
             return document.getElementById("projects");
+
+        case "Skills":
+            return document.getElementById("skills");
         
         case "Contact Me":
             return document.getElementById("contact");
@@ -84,18 +87,17 @@ sidebarIcons.forEach( (icon) => {
 footerIcons.forEach((icon) => {
     icon.addEventListener("mouseover", () => {
         const inner =  icon.getElementsByTagName("i")
-        inner[0].style.color=colorPicker(inner[0].classList[1])
+        inner[0].style.color=colorPicker(inner[0].classList[2])
         icon.style.backgroundColor="#1768ac"
     })
-})
 
-footerIcons.forEach((icon) => {
     icon.addEventListener("mouseout", () => {
         const inner =  icon.getElementsByTagName("i")
         inner[0].style=""
         icon.style=""
     })
 })
+
 
 toHome.addEventListener("click", () => {
     home.scrollIntoView({behavior: "smooth"})
@@ -148,7 +150,21 @@ window.addEventListener('resize', init)
 init()
 checkPosition()
 
+const modalIcons = document.querySelectorAll(".modal-icon")
 
+modalIcons.forEach( (icon) => {
+    icon.addEventListener("mouseover", () => {
+        const inner = icon.getElementsByTagName("i")[0]
+
+        inner.style.color = "#1f1f1f"
+    })
+
+    icon.addEventListener("mouseout", () => {
+        const inner = icon.getElementsByTagName("i")[0]
+
+        inner.style.color = ""
+    })
+})
 
 
 // Show / Close Modals

@@ -41,11 +41,11 @@ a {
 i {
     text-align: center;
 }
-
+/* 
 canvas {
     width: 100%;
     height: 1000px;
-}
+} */
 
 #particles-js{
     width: 100%;
@@ -75,7 +75,7 @@ canvas {
 }
 
 .ic-sidebar {
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .icon {
@@ -141,8 +141,28 @@ canvas {
 }
 
 .contact-container {
-    height: 1000px
+    /* height: 1000px */
 }
+
+.about-container {
+    background-color: #03256c;
+    color: white;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.about-header {
+    padding-top: 4rem;
+}
+
+.about-content {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+}
+
 
 
 .fab-style {
@@ -158,9 +178,12 @@ canvas {
 
 .footer-icon {
     background-color: #2541b2;
-    margin: 1rem;
     height: 4rem;
     width: 4rem;
+}
+
+footer a {
+    margin: 1rem;
 }
 
 .nav-button {
@@ -186,13 +209,7 @@ canvas {
 }
 /* projects */
 
-.projects {
-    /* position: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-template-rows: repeat(1fr);
-    column-gap: 200px;
-    row-gap: 200px; */
-}
+
 
 .project {
     font-size: 1rem;
@@ -203,6 +220,12 @@ canvas {
     border-radius: 16px;
     object-fit: cover;
 }
+
+.project img {
+    height: 25rem;
+    width: 25rem;
+}
+
 .project p {
     padding: 2rem;
     margin: 0;
@@ -227,15 +250,83 @@ canvas {
 }
 
 .inner-modal {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
     border-radius: 1rem;
-    background-color: aqua;
-    height: 70%;
-    width: 60%;
+    background-color: #1f1f1f;
+    color: white;
+    height: 80%;
+    width: 75%;
     overflow: auto;
 }
+
+
+.inner-modal span {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.inner-modal img {
+    height: 40vw;
+    width: 40vw;
+}
+
+.modal-content p {
+    text-align: left;
+    margin: 40px;
+}
+
+.modal-content a {
+    margin: 2rem 10vw;
+}
+
+
+.modal-icon {
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.4);
+    height: 4rem;
+    width: 4rem;
+}
+
+.modal-icon i {
+    color: white;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+.modal-icon:hover, .modal-icon:focus {
+    background-color: #e6e3e3;
+}
+
+.skills-container {
+    color: white;
+    background-color: #03256c;
+    height: 500px;
+}
+
+.skills-header {
+    padding-top: 4rem;
+}
+
+
+@media only screen and (max-height: 600px) {
+    .ic-sidebar {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    
+    .sidebar {
+        display: none;
+    }
+
+}
+
 
 @media only screen and (max-width: 1500px) {
     .project {
@@ -260,6 +351,10 @@ canvas {
 
     .sidebar {
         width: 3rem;
+    }
+
+    .about-content {
+        font-size: 1.25rem;
     }
 }
 
@@ -293,11 +388,20 @@ canvas {
     .project{
         width: 80vw;
     }
+
+    .project img {
+        height: 60vw;
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .project {
         font-size: 0.8rem;
+    }
+
+    .top-svg-transition {
+        top: 3rem;
     }
 }
 
@@ -309,6 +413,15 @@ canvas {
     .header-nav-button {
         display: hidden;
     }
+
+    .top-svg-transition {
+        top: 2rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
