@@ -36,12 +36,12 @@ app.post("/", (req, res) => {
 
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
-          console.log(error);
+            console.log(error);
+            res.send("There was an error, please try again later")
         } else {
-            alert("Message sent")
+            res.redirect("/")
         }
     });
-    res.redirect("/")
 })
 
 
