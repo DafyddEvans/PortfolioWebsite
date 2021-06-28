@@ -135,7 +135,6 @@ function checkPosition() {
 }
 
 function fadeIn(elementArray) {
-    console.log("called")
     elementArray.forEach( (element, index) => {
         setTimeout(function () {
             element.classList.add('fade-in-element')
@@ -149,22 +148,6 @@ window.addEventListener('resize', init)
 
 init()
 checkPosition()
-
-const modalIcons = document.querySelectorAll(".modal-icon")
-
-modalIcons.forEach( (icon) => {
-    icon.addEventListener("mouseover", () => {
-        const inner = icon.getElementsByTagName("i")[0]
-
-        inner.style.color = "#1f1f1f"
-    })
-
-    icon.addEventListener("mouseout", () => {
-        const inner = icon.getElementsByTagName("i")[0]
-
-        inner.style.color = ""
-    })
-})
 
 
 // Show / Close Modals

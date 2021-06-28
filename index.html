@@ -175,10 +175,11 @@
 
         <div id="contact" class="contact-container">
             <h1>Contact Me</h1>
-            <form action="post" class="contact-form">
-                <input name="contactName" type="text" placeholder="Name">
-                <textarea name="contactMessage" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button>Post</button>
+            <form action="/" method="post" class="contact-form">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email (optional)" name="email">
+                <textarea placeholder="Message..." rows="5"  name="message" required></textarea>
+                <button type="submit" href="/">Submit</button>
             </form>
         </div>
 
