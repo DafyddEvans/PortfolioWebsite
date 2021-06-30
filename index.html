@@ -58,18 +58,17 @@
         </svg>
 
         <div id="about" class="about-container">
-            <div class="container fade">
-                <h1 class="about-header">About Me</h1>
-                <p class="about-content">
+            <div>
+                <h1 class="about-header container fade">About Me</h1>
+                <p class="about-content container fade">
                     Hi. my name is Dafydd I’m an aspiring web developer/software engineer with a master’s degree in electronic engineering.</p>
-                <p class="about-content">
+                <p class="about-content container fade">
                     I built this portfolio website to display some of my recent projects and showcase some of my still developing skillset.
                 </p>
-                <p class="about-content">
+                <p class="about-content container fade">
                     I currently live on Anglesey and am willing to move to anywhere in the UK for an exciting opportunity.
                     I enjoy problem solving, learning new things and building complex projects.
                 </p>
-                    <!-- need to make this a real class -->
             </div>
         </div>
 
@@ -89,6 +88,21 @@
                             <h1>Chess Game</h1>
                             <span tabindex=0>X</span>
                             <img src="./images/Chess_Game.PNG" alt="image of a chess board">
+
+                            <div class="icon-container">
+                                <a href="https://codesandbox.io/s/chess-game-pcxw5">
+                                    <div class="modal-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                </a>
+                
+                                <a href="https://pcxw5.csb.app/">
+                                    <div class="modal-icon">
+                                        <i class="fas fa-gamepad"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            
                             <p>
                                 A simple chess game built using React on codesandbox.io.
                             </p>
@@ -107,19 +121,6 @@
                                 challenge each with a different playstyle and difficulty.
                             </p>
 
-                            <div class="icon-container">
-                                <a href="https://codesandbox.io/s/chess-game-pcxw5">
-                                    <div class="modal-icon">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                </a>
-                
-                                <a href="https://pcxw5.csb.app/">
-                                    <div class="modal-icon">
-                                        <i class="fas fa-gamepad"></i>
-                                    </div>
-                                </a>
-                            </div>
 
                         </div>
                     </div>
@@ -166,7 +167,21 @@
         </svg>
 
         <div id="skills" class="skills-container">
-            <h1 class="skills-header">Skills</h1>
+            <div>
+                <h1 class="skills-header container fade">Skills</h1>
+
+                <div class="skills-icon-container">
+                    <div class="container fade"><i class="fab fa-html5 fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-css3-alt fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-js-square fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-react fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-node fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-java fa-2x"></i></div>
+                    <div class="container fade"><i class="fab fa-python fa-2x"></i></div>
+                    <div class="container fade">MongoDB</div>
+                    <div class="container fade">C#</div>
+                </div>
+            </div>
         </div>
 
         <svg class="bottom-svg-transition"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -174,13 +189,15 @@
           </svg>
 
         <div id="contact" class="contact-container">
-            <h1>Contact Me</h1>
-            <form action="/" method="post" class="contact-form">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="email" placeholder="Email (optional)" name="email">
-                <textarea placeholder="Message..." rows="5"  name="message" required></textarea>
-                <button type="submit" href="/">Submit</button>
-            </form>
+            <div>
+                <h1 class="contact-header container fade">Contact Me</h1>
+                <form action="/" method="post" class="contact-form">
+                    <input class="container fade" type="text" placeholder="Name" name="name" required>
+                    <input class="container fade" type="email" placeholder="Email (optional)" name="email">
+                    <textarea class="container fade" placeholder="Message..." rows="5"  name="message" required></textarea>
+                    <button class="container fade" type="submit" href="/">Submit</button>
+                </form>
+            </div>
         </div>
 
     
