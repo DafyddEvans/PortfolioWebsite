@@ -76,7 +76,9 @@ sidebar.addEventListener("mouseout", () => {
 sidebarIcons.forEach( (icon) => {
     icon.addEventListener("click", () => {
         const iconInner = icon.getElementsByTagName("p")[0].getInnerHTML()
+        console.log(iconInner)
         const scrollTo = getElement(iconInner)
+        console.log(scrollTo)
         scrollTo.scrollIntoView({behavior: "smooth"})
     })
 })
