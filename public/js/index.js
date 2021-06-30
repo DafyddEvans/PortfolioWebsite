@@ -74,7 +74,7 @@ sidebar.addEventListener("mouseout", () => {
 
 // Hover for all sidebar icons
 sidebarIcons.forEach( (icon) => {
-    icon.addEventListener("click", () => {
+    icon.addEventListener("click touchstart", () => {
         const iconInner = icon.getElementsByTagName("p")[0].getInnerHTML()
         const scrollTo = getElement(iconInner)
         scrollTo.scrollIntoView({behavior: "smooth"})
@@ -99,11 +99,11 @@ footerIcons.forEach((icon) => {
 })
 
 
-toHome.addEventListener("click", () => {
+toHome.addEventListener("click touchstart", () => {
     home.scrollIntoView({behavior: "smooth"})
 })
 
-toAbout.addEventListener("click", () => {
+toAbout.addEventListener("click touchstart", () => {
     about.scrollIntoView({behavior: "smooth"})
 })
 
@@ -155,7 +155,7 @@ const projects = document.querySelectorAll(".project")
 const modals = document.querySelectorAll(".modal")
 
 projects.forEach( (proj) => {
-    proj.addEventListener("click", () => {
+    proj.addEventListener("click touchstart", () => {
         const id = proj.getElementsByTagName("h1")[0].innerHTML
         const modal = document.getElementById(id)
 
@@ -169,7 +169,7 @@ projects.forEach( (proj) => {
 modals.forEach( (modal) => {
     const btn = modal.getElementsByTagName("span")[0]
 
-    modal.addEventListener("click", (event) => {
+    modal.addEventListener("click  touchstart", (event) => {
         if (event.target == btn || event.target == modal) {
             modal.style.display = "none";
             body.style.height = ""
